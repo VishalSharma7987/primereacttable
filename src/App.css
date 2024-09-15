@@ -1,0 +1,242 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* app cs */
+
+.b {
+  text-align: center;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.paginator {
+  margin-top: 1.5rem;
+}
+
+/* OverlayPanel */
+.overpannel {
+  padding: 1rem;
+  width: 12rem;
+  height: 9rem;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inputext {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.button {
+  display: inline-block;
+  width: 50%;
+  background-color: transparent;
+  color: rgb(20, 20, 20);
+  padding: 0.6rem;
+  font-size: 1rem;
+  text-align: center;
+ 
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005bb5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .inputext, .button {
+    font-size: 0.9rem;
+  }
+}
+/* App.css */
+
+/* General layout styles */
+.card {
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header styling */
+h3 {
+  color: #333;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* DataTable styling */
+.p-datatable {
+  margin-top: 20px;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+/* Striped rows for better distinction */
+.p-datatable-striped .p-datatable-tbody > tr.p-row-odd {
+  background-color: #f5f5f5;
+}
+
+/* Add a subtle hover effect on rows */
+.p-datatable-tbody > tr:hover {
+  background-color: #eef6ff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Column header styles */
+.p-datatable-thead > tr > th {
+  background-color: #4CAF50;
+  color: white;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Paginator styling */
+.p-paginator {
+  margin-top: 10px;
+}
+
+.p-paginator .p-paginator-page.p-highlight {
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.p-paginator .p-paginator-page:hover {
+  background-color: #45a049;
+}
+
+/* OverlayPanel styles */
+.overpannel {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* InputText styling */
+.inputext {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.inputext:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Button styling */
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #534caf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+
+
